@@ -1,0 +1,66 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #020f49;
+}
+h1 {
+    text-align: center;
+    color: #efefef;
+}
+button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 40px;
+    font-size: 18px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+button:active {
+    background-color: #0056b3;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(26, 39, 94, 0.616);
+}
+.user-post-author {
+    font-weight: bold;
+}
+.user-post {
+    background-color: #efefef;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#userPosts {
+    margin-bottom: 20px;
+}
+#postContent {
+    width: 97%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    background-color: #cccde0;
+}
+#authorName {
+    width: calc(100% - 130px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    background-color: #cccde0;
+    border-radius: 5px;
+    font-size: 17px;
+}

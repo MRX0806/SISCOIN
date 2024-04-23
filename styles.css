@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #020f49;
+  color: #fff;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.toggle-btn {
+  font-size: 40px;
+  cursor: pointer;
+  padding: 0;
+  margin: 20%;
+}
+
+.main-menu {
+  display: none; /* Oculta el div principal al principio */
+}
+
+.menu {
+  width: 18%; /* 1/16 de la pantalla */
+  height: 100%;
+  background-color: #020f49;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Reducimos el z-index para que esté detrás del header */
+}
+
+li{
+  color: white;
+  font-size: 14px;
+}
+.menu-list {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin-top: 132px;
+  max-height: 0;
+  /*overflow: hidden;*/
+  transition: max-height 0.3s ease;
+}
+
+.menu-list li {
+  padding: 25px;
+}
+
+
+.menu-list li a {
+  color: #fff;
+  text-decoration: none;
+  display: block; /* Añadimos esta línea para que los enlaces ocupen todo el ancho del contenedor */
+}
+
+/* Muestra la lista de menú cuando el toggle está seleccionado */
+#toggle:checked ~ .main-menu .menu-list  .menu-list li a{
+  max-height: 100%;
+}
+
+.show-menu {
+  display: block; /* Mostramos el menú cuando se aplica la clase 'show-menu' */
+}
+
+.menu-list li a:hover{
+  background-color: #344077;
+  color: rgb(0, 0, 0);
+}
+#contenedor-principal {
+  position: relative;
+ 
+}
+
+.content {
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 32%;
+  
+}
+#contenedor {
+  text-align: center;
+  width: 400px;
+  padding: 150px;
+  position: absolute;
+  top: 100%; /* Coloca #contenedor debajo de .content */
+  right: 0;
+  margin-right: 32%;
+  
+}
+

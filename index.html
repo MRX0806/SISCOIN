@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú Desplegable</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div>
+      <label for="toggle" class="toggle-btn">☰</label>
+    </div>
+  </header>
+
+  <aside>
+    <div class="main-menu">
+        <div class="menu">
+                <ul class="menu-list">
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">PERFIL</a></li>
+                    <li><a href="#">FORO</a></li>
+                    <li><a href="#">REPOSITORIO</a></li>
+                    <!-- Agrega más elementos de menú según necesites -->
+                </ul>
+            </div>
+        </div>
+    </div>
+  </aside>
+
+  <section>
+    <div id="contenedor-principal">
+      
+      <div class="content">
+        <h2>Bienvenido a nuestra Plataforma de Colaboración</h2>
+        <P>Conectando a estudiantes interesados en investigación para impulsar proyectos conjuntos</P>
+      </div>
+      <div  id="contenedor">
+        <h2>Acerca de Nosotros...</h2>
+        <p>¡Bienvenido! Nuestra plataforma está diseñada para fomentar la colaboración entre estudiantes apasionados por la investigación. Ofrecemos una plataforma en línea donde puedes crear un perfil, establecer tus áreas de interés y encontrar posibles colaboradores para tus proyectos de investigación.</p>
+        </section>
+      </div>
+      
+    </div>
+  </section>  
+  <script>
+    document.querySelector('.toggle-btn').addEventListener('click', function() {
+      document.querySelector('.main-menu').classList.toggle('show-menu');
+    });
+  </script>
+</body>
+</html>
